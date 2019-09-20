@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+  background-image: url(https://i.pinimg.com/originals/4f/6d/05/4f6d052bb1b26150115888ea06d4c106.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.mySlides {display:none;}
+
+
+.active{
+  background-color:red;
+}
+
+
+
+
+
+
+
+
+
+.end{
+display:block;
+   width: 100%;
+   height: auto;
+   background-color: black;
+   opacity: 0.8;
+  margin-block-start:305px;
+
+}
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<h1 style="color:white;text-align:center;">Memories</h1>
+
+
+
+  <div class="w3-content w3-display-container">
+
+  <div class="w3-display-container mySlides">
+    <img src="rhull.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+     Family 
+    </div>
+  </div>
+
+ 
+  <div class="w3-display-container mySlides">
+    <img src="brothers.jpg" style="width:100%">
+    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+      Brothers
+    </div>
+  </div>
+ <div class="w3-display-container mySlides">
+    <img src="school.jpg" style="width:100%">
+    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+      School frndss
+    </div>
+  </div>
+ <div class="w3-display-container mySlides">
+    <img src="kota.jpg" style="width:100%">
+    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+      kotaites
+    </div>
+  </div>
+
+
+
+  <div class="w3-display-container mySlides">
+    <img src="olive.jpg" style="width:100%">
+    <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+      OLIVE, Roorkee
+    </div>
+  </div>
+
+  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>
